@@ -50,7 +50,7 @@ function VerifyContent() {
         setStatus('success');
         
         toast({
-          title: 'Welcome to Startup Benefits! 🎉',
+          title: 'Welcome to Startup Benefits!',
           description: 'You\'re now signed in and ready to explore deals.',
           type: 'success',
         });

@@ -56,7 +56,7 @@ export default function RegisterPage() {
       if (response.ok) {
         setEmailSent(true);
         toast({
-          title: 'Registration successful! 🎉',
+          title: 'Registration successful!',
           description: 'Check your email for the verification link.',
           type: 'success',
         });

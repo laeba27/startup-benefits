@@ -345,7 +345,7 @@ export default function DealsPage() {
                       <div className="flex items-center gap-2 mb-2">
                         {deal.isFeatured && (
                           <span className="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded">
-                            ⭐ Featured
+                            Featured
                           </span>
                         )}
                         {deal.isLocked && (

@@ -34,7 +34,7 @@ export const sendMagicLinkEmail = async (
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log(`📧 Magic link email sent to ${to}`);
+    console.log(`Magic link email sent to ${to}`);
   } catch (error) {
     console.error('  Error sending email:', error);
     throw new Error('Failed to send email');
@@ -115,7 +115,7 @@ const createMagicLinkEmailTemplate = (magicLink: string, userName?: string): str
         
         
         <div class="warning">
-          <strong>⚠️ Security Notice:</strong><br>
+          <strong>Security Notice:</strong><br>
           This link will expire in 15 minutes and can only be used once. 
           Never share this link with anyone.
         </div>

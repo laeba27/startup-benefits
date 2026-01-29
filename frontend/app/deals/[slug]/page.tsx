@@ -271,7 +271,7 @@ export default function DealDetailsPage() {
                 <div className="flex items-center gap-3 mb-3">
                   {deal.isFeatured && (
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-yellow-900 text-sm font-semibold rounded-full">
-                      ⭐ Featured Deal
+                      Featured Deal
                     </span>
                   )}
                   {deal.isLocked && (

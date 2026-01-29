@@ -212,7 +212,7 @@ async function seedDeals() {
     const mongoUri = process.env.MONGODB_URI;
 
     if (!mongoUri) {
-      console.error('❌ MONGODB_URI not found in .env');
+      console.error('MONGODB_URI not found in .env');
       process.exit(1);
     }
 
@@ -238,11 +238,11 @@ async function seedDeals() {
     });
 
     console.log(`\n... and ${inserted.length - 3} more deals\n`);
-    console.log('🎉 Seeding completed!\n');
+    console.log('Seeding completed!\n');
 
     process.exit(0);
   } catch (error) {
-    console.error('❌ Error seeding:', error);
+    console.error('Error seeding:', error);
     process.exit(1);
   }
 }

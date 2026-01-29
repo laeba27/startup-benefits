@@ -150,7 +150,7 @@ export const verifyMagicLinkToken = (token: string): TokenPayload => {
  */
 export const extractTokenFromHeader = (authHeader?: string): string | null => {
   if (!authHeader) {
-    console.log('⚠️  No authorization header provided');
+    console.log('No authorization header provided');
     return null;
   }
   

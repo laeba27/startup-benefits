@@ -152,7 +152,7 @@ export default function LoginPage() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-500">
-            🔒 We use passwordless authentication for maximum security.
+            We use passwordless authentication for maximum security.
             No passwords to remember or store.
           </p>
         </div>
