@@ -77,7 +77,7 @@ export default function RegisterPage() {
 
   if (emailSent) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+      <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-purple-50">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -85,7 +85,7 @@ export default function RegisterPage() {
           className="w-full max-w-md"
         >
           {/* Success Card */}
-          <div className="bg-card rounded-2xl shadow-lg overflow-hidden border border-border">
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
             {/* Success Icon Animation */}
             <div className="flex justify-center pt-12 pb-6">
               <motion.div
@@ -110,7 +110,7 @@ export default function RegisterPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-2xl font-bold text-foreground mb-3"
+                className="text-2xl font-bold text-gray-900 mb-3"
               >
                 Welcome, {formData.name}!
               </motion.h1>
@@ -119,10 +119,10 @@ export default function RegisterPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-muted-foreground mb-6 leading-relaxed"
+                className="text-gray-600 mb-6 leading-relaxed"
               >
                 Your account has been created successfully. We've sent a verification link to{' '}
-                <span className="font-semibold text-foreground">{formData.email}</span>
+                <span className="font-semibold text-gray-900">{formData.email}</span>
               </motion.p>
 
               {/* Account Summary */}
@@ -130,26 +130,26 @@ export default function RegisterPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="bg-muted rounded-lg p-4 mb-6 space-y-2 text-sm text-left"
+                className="bg-gray-50 rounded-lg p-4 mb-6 space-y-2 text-sm text-left"
               >
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Name</span>
-                  <span className="font-medium text-foreground">{formData.name}</span>
+                <div className="flex justify-between items-center pb-2 border-b border-gray-200">
+                  <span className="text-gray-600">Name</span>
+                  <span className="font-medium text-gray-900">{formData.name}</span>
                 </div>
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Email</span>
-                  <span className="font-medium text-foreground truncate ml-2">{formData.email}</span>
+                <div className="flex justify-between items-center pb-2 border-b border-gray-200">
+                  <span className="text-gray-600">Email</span>
+                  <span className="font-medium text-gray-900 truncate ml-2">{formData.email}</span>
                 </div>
                 {formData.company && (
-                  <div className="flex justify-between items-center pb-2 border-b border-border">
-                    <span className="text-muted-foreground">Company</span>
-                    <span className="font-medium text-foreground">{formData.company}</span>
+                  <div className="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span className="text-gray-600">Company</span>
+                    <span className="font-medium text-gray-900">{formData.company}</span>
                   </div>
                 )}
                 {formData.role && (
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Role</span>
-                    <span className="font-medium text-foreground">{formData.role}</span>
+                    <span className="text-gray-600">Role</span>
+                    <span className="font-medium text-gray-900">{formData.role}</span>
                   </div>
                 )}
               </motion.div>
@@ -159,9 +159,9 @@ export default function RegisterPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8 text-sm"
+                className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 text-sm"
               >
-                <p className="text-blue-900 dark:text-blue-100">
+                <p className="text-blue-900">
                   <span className="font-semibold">Next step:</span> Check your email and click the verification link to activate your account.
                 </p>
               </motion.div>
@@ -174,7 +174,7 @@ export default function RegisterPage() {
                 className="space-y-3"
               >
                 <Link href="/" className="block">
-                  <Button className="w-full h-12 bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
                     Return to Home
                   </Button>
                 </Link>
@@ -192,7 +192,7 @@ export default function RegisterPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="text-xs text-muted-foreground mt-6"
+                className="text-xs text-gray-500 mt-6"
               >
                 Didn't receive the email? Check your spam folder or contact support.
               </motion.p>
@@ -204,7 +204,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-purple-50">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -212,9 +212,9 @@ export default function RegisterPage() {
         className="w-full max-w-lg"
       >
         {/* Registration Card */}
-        <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
           {/* Header */}
-          <div className="bg-primary text-primary-foreground px-8 py-12 text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-12 text-center">
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -227,9 +227,9 @@ export default function RegisterPage() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-primary-foreground/80 text-sm"
+              className="text-white/80 text-sm"
             >
-              Join thousands of teams building amazing products
+              Join thousands of startups saving on essential tools
             </motion.p>
           </div>
 
@@ -242,8 +242,8 @@ export default function RegisterPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Full Name <span className="text-destructive">*</span>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
+                  Full Name <span className="text-red-600">*</span>
                 </label>
                 <Input
                   id="name"
@@ -264,8 +264,8 @@ export default function RegisterPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
               >
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email Address <span className="text-destructive">*</span>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                  Email Address <span className="text-red-600">*</span>
                 </label>
                 <Input
                   id="email"
@@ -286,7 +286,7 @@ export default function RegisterPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="company" className="block text-sm font-medium text-gray-900 mb-2">
                   Company Name
                 </label>
                 <Input
@@ -307,7 +307,7 @@ export default function RegisterPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.45 }}
               >
-                <label htmlFor="role" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="role" className="block text-sm font-medium text-gray-900 mb-2">
                   Role
                 </label>
                 <Input
@@ -328,8 +328,8 @@ export default function RegisterPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                  Phone Number <span className="text-muted-foreground text-xs">(optional)</span>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
+                  Phone Number <span className="text-gray-500 text-xs">(optional)</span>
                 </label>
                 <Input
                   id="phone"
@@ -352,7 +352,7 @@ export default function RegisterPage() {
               >
                 <Button
                   type="submit"
-                  className="w-full h-12 bg-primary text-primary-foreground hover:bg-primary/90 font-semibold rounded-lg transition-all duration-200 group"
+                  className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-200 group"
                   disabled={isLoading || !formData.email || !formData.name}
                 >
                   {isLoading ? (
@@ -376,9 +376,9 @@ export default function RegisterPage() {
                 transition={{ delay: 0.6 }}
                 className="text-center pt-4"
               >
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   Already have an account?{' '}
-                  <Link href="/login" className="font-semibold text-primary hover:text-primary/90 transition-colors">
+                  <Link href="/login" className="font-semibold text-blue-600 hover:text-blue-700 transition-colors">
                     Sign in
                   </Link>
                 </p>
@@ -392,7 +392,7 @@ export default function RegisterPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
-          className="text-center text-xs text-muted-foreground mt-6"
+          className="text-center text-xs text-gray-500 mt-6"
         >
           By signing up, you agree to our Terms of Service and Privacy Policy
         </motion.p>
